@@ -46,3 +46,43 @@
 // val5[0] = "dog0";
 // val5.push("dog4");
 // console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+// const name = "ghost-dog";
+// const age = 24;
+
+// 従来の方法
+// const message1 = "I'm " + name + " and " + age + " years old.";
+// console.log(message1);
+
+// テンプレート文字列を用いた方法
+// const message2 = `I'm ${name} and ${age} years old.`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
+
+// 従来の関数
+// function func1(str) {
+//   console.log(str);
+// }
+// 変数の中に関数を格納することも可能
+// const func1 = function (str) {
+//   console.log(str);
+// };
+// func1("hello js");
+
+// アロー関数
+// 変数が1つの場合"(str)"は"str"と書いてもいい
+const func2 = (str) => {
+  console.log(str);
+};
+func2("hello!");
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(func3(10, 20));
